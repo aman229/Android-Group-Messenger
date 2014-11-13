@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.groupstudyapp.AuthenticationActivity" >
+    
+  	<TextView android:id="@+id/appname"
+  		android:textSize="32sp"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:capitalize="characters"
+        android:text="@string/appname" />
+    
+    <EditText android:id="@+id/Username"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appname"
+        android:hint="@string/username" />
+     
+    <EditText android:id="@+id/Password"
+    	android:inputType="textPassword"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Username"
+        android:hint="@string/password" />
+        
+    <Button
+    	android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Password"
+        android:text="@string/loginbutton"
+        android:onClick="login" />
+        
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbutton"
+        android:text="@string/signupbutton"
+        android:onClick="register" />
+    
+
+</RelativeLayout>

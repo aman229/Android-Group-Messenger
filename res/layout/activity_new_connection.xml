@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+		<TextView android:id="@+id/searchUser"
+        	android:layout_width="match_parent"
+        	android:textSize="32sp"
+       		android:layout_height="35dp"
+        	android:hint="Search New User"/>
+        	
+		<EditText android:id="@+id/searchname"
+        	android:layout_width="match_parent"
+       		android:layout_height="40dp"
+       		android:layout_below="@id/searchUser"
+        	android:hint="@string/newMessage"
+        	android:inputType="number"/>
+        	
+        <Button
+        	android:id="@+id/finduserbutton"
+        	android:layout_width="150dp"
+        	android:layout_height="40dp"
+        	android:layout_below="@id/searchname"
+        	android:text="Search" />
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="360dp"
+    	android:layout_below="@id/finduserbutton">
+		<ListView
+              android:id="@+id/userslist"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent">
+              </ListView>
+        </LinearLayout>
+         
+</RelativeLayout>
